@@ -17,7 +17,7 @@ dependencies = [
     "requests==2.32.3",
     "ftfy==6.3.0",
     "regex==2024.9.11",
-    "numpy==2.0.2",
+    "numpy==1.26.4",
     "blobfile==3.0.0",
     "transformers==4.45.2",
     "torchvision==0.20.0",
