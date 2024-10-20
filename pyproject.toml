@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kandinsky2"
+version = "0.1.0"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+
+# List of dependencies
+dependencies = [
+    "Pillow==10.4.0",
+    "attrs==24.2.0",
+    "torch==2.5.0",
+    "filelock==3.16.1",
+    "requests==2.32.3",
+    "ftfy==6.3.0",
+    "regex==2024.9.11",
+    "numpy==2.0.2",
+    "blobfile==3.0.0",
+    "transformers==4.45.2",
+    "torchvision==0.20.0",
+    "omegaconf==2.3.0",
+    "pytorch-lightning==2.4.0",
+    "einops==0.8.0",
+    "sentencepiece==0.2.0",
+    "diffusers==0.30.3",
+    "accelerate==1.0.1",
+    "opencv-python==4.10.0.84",
+    "gradio==4.44.1",
+    "gradio_client==1.3.0",
+    "huggingface-hub==0.25.1",
+    "clip @ git+https://github.com/openai/CLIP.git@dcba3cb2e2827b402d2701e7e1c7d9fed8a20ef1",
+]
+
+# Automatically find all packages in the project
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests*"]
